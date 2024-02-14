@@ -1,4 +1,4 @@
-package Lesson5.Exercise;
+package Lesson7.Exercise;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
