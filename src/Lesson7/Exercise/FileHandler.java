@@ -1,26 +1,30 @@
 package Lesson7.Exercise;
 
 public abstract class FileHandler {
-    private String filea, fileb;
+    private String sourceFile, targetFile;
 
-    public FileHandler(String sourceFileName, String targetFileName) {
-        this.filea = sourceFileName;
-        this.fileb = targetFileName;
+    public FileHandler(String fileA) {
+        this.sourceFile = fileA;
     }
 
-    public String getSourcefilename() {
-        return filea;
+    public FileHandler(String fileA, String fileB) {
+        this.sourceFile = fileA;
+        this.targetFile = fileB;
+    }
+    
+    public String getSourceFile() {
+        return sourceFile;
     }
 
-    public void setSourcefilename(String sourcefilename) {
-        this.filea = sourcefilename;
+    public void setSourceFile(String sourceFile) {
+        this.sourceFile = sourceFile;
     }
 
-    public String getTargetfilename() {
-        return fileb;
+    public String getTargetFile() {
+        return targetFile;
     }
 
-    public void setTargetfilename(String targetfilename) {
-        this.fileb = targetfilename;
+    public void setTargetFile(String targetFile) {
+        this.targetFile = targetFile;
     }
 }

@@ -1,23 +1,27 @@
 package Lesson7.Exercise;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
-public class CountWords {
-    public static void main(String[] args) {
-        String fileName = "exercise.txt";
-        int wordCount = 0;
+public class CountWords extends FileHandler {
+    public CountWords(String sourceFileName) {
+        super(sourceFileName);
+    }
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+    public int countWords() {
+        int count = 0;
+        try {
+            ReadFile readFile = new ReadFile(super.getSourceFile());
+            BufferedReader reader = readFile.readfileBuffer();
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] words = line.split("\\s+");
-                wordCount += words.length;
+                String[] words = line.split("\s+");
+                count += words.length;
             }
-            System.out.println("Total words in the file: " + wordCount);
         } catch (IOException e) {
-            System.out.println("Error: IOException occurred while reading file: " + fileName);
+            System.err.println("Error in reading the file" + e.getMessage());
         }
+
+        return count;
     }
 }

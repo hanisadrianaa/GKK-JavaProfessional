@@ -5,14 +5,14 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class CopyFiles extends FileHandler  {
-    public CopyFiles(String sourceFileName, String targetFileName) {
+public class CopyFile extends FileHandler  {
+    public CopyFile(String sourceFileName, String targetFileName) {
     super(sourceFileName, targetFileName);
     }
 
     public void copyFile() throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(super.getSourcefilename()));
-                FileWriter writer = new FileWriter(super.getTargetfilename())) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(super.getSourceFile()));
+                FileWriter writer = new FileWriter(super.getTargetFile())) {
             String line;
             while ((line = reader.readLine()) != null) {
                 writer.write(line + "\n");
