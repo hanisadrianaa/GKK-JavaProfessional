@@ -1,5 +1,7 @@
 package Lesson7.Exercise;
 
+import java.io.IOException;
+
 public abstract class FileHandler {
     private String sourceFile, targetFile;
 
@@ -27,4 +29,6 @@ public abstract class FileHandler {
     public void setTargetFile(String targetFile) {
         this.targetFile = targetFile;
     }
+
+    public abstract void processFile() throws IOException;
 }

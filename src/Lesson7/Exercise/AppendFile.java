@@ -16,4 +16,6 @@ public class AppendFile extends FileHandler {
         writer.close();
         System.out.println("String appended to file successfully.");
     }
+
+    
 }

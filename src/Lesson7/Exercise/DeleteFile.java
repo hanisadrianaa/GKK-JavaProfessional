@@ -22,4 +22,8 @@ public class DeleteFile extends FileHandler {
             System.out.println("Error! File '" + getSourceFile() + "' not found.");
         }
     }
+
+    @Override
+    public void processFile() throws IOException {
+    }
 }

@@ -73,5 +73,40 @@ public class Main {
         long displaySize = size.fileSize(filename);
         System.out.println("File size: " + displaySize + " bytes");
         // End file size
+
+        // File encryption
+        EncryptFile encrypt = new EncryptFile(sourcefilename, targetfilename);
+        try {
+            encrypt.processFile();
+            System.out.println("File encrypted successfully!");
+        } catch (IOException e) {
+            System.err.println("Error encrypting file: " + e.getMessage());
+        }
+        // End file encryption
+
+        // File decryption
+        DecryptFile decrypt = new DecryptFile(sourcefilename, targetfilename);
+        try {
+            decrypt.processFile();
+            System.out.println("File decrypted successfully!");
+        } catch (IOException e) {
+            System.err.println("Error decrypting file: " + e.getMessage());
+        }
+        // End file decryption
+
+        // Read http url
+        HTTPReader httpUrl = new HTTPReader();
+        httpUrl.printContent();
+        // End read http url
+
+        // Pattern match
+        PatternMatchText patternMatch = new PatternMatchText();
+        patternMatch.printMatch();
+        // End pattern match
+
+        // Read json
+        ReadJson jsonToObject = new ReadJson();
+        jsonToObject.mapToObject();
+        // End read json
     }
 }

@@ -65,8 +65,6 @@ public class MatrixPower {
             }
         }
 
-        // 
-
         // Print the final result (An)
         for (int i = 0; i < dim; i++) {
             for (int j = 0; j < dim; j++) {
@@ -74,5 +72,7 @@ public class MatrixPower {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 }
