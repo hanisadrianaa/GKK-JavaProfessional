@@ -60,6 +60,8 @@ public class RandomNumbers {
         System.out.printf("\nMean: %.2f\n", mean);
         System.out.println("Median: " + median);
         System.out.println("Mode: " + mode);
+
+        scanner.close();
     }
 
     // mean (average) = Σ(xᵢ) / n
