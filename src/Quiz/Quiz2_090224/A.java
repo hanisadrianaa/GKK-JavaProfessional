@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224;
+package quiz.Quiz2_090224;
 
 public class A {
     public int i1;

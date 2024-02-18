@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question22;
+package quiz.Quiz2_090224.Question22;
 
 public class Test {
     public static void main(String[] args) {

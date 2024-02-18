@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question19;
+package quiz.Quiz2_090224.Question19;
 
 public interface I1 {
     void m1() throws java.io.IOException;

@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question32;
+package quiz.Quiz2_090224.Question32;
 
 public class Test {
     private static void add(double d1, double d2) {

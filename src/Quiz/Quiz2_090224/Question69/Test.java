@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question69;
+package quiz.Quiz2_090224.Question69;
 
 class Message {
     String msg = "Happy New Year!";

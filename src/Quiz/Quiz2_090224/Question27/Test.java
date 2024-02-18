@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question27;
+package quiz.Quiz2_090224.Question27;
 
 class Parent {
     public String toString() {

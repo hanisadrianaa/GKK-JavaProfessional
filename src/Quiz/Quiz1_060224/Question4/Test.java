@@ -1,4 +1,4 @@
-package Quiz.Quiz1_060224.Question4;
+package quiz.Quiz1_060224.Question4;
 
 // Question 4. Consider the code of Test.java. What will be the result of compiling
 // and executing the code?

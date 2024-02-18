@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question55;
+package quiz.Quiz2_090224.Question55;
 
 public class Test {
     public String name;

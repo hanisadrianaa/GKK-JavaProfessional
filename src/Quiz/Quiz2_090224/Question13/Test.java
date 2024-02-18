@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question13;
+package quiz.Quiz2_090224.Question13;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

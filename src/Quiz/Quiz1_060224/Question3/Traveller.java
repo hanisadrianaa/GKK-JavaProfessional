@@ -1,4 +1,4 @@
-package Quiz.Quiz1_060224.Question3;
+package quiz.Quiz1_060224.Question3;
 
 abstract class Traveller {
     void travel(String place){

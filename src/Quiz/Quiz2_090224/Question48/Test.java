@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question48;
+package quiz.Quiz2_090224.Question48;
 
 import java.util.ArrayList;
 import java.util.List;

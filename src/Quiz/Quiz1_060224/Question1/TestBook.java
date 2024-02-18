@@ -1,4 +1,4 @@
-package Quiz.Quiz1_060224.Question1;
+package quiz.Quiz1_060224.Question1;
 
 class Book {
     private String name;

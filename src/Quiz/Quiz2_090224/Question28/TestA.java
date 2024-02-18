@@ -1,6 +1,6 @@
-package Quiz.Quiz2_090224.Question28;
+package quiz.Quiz2_090224.Question28;
 
-import Quiz.Quiz2_090224.A; // Line 3
+import quiz.Quiz2_090224.A;
 
 public class TestA {
     public static void main(String[] args) {

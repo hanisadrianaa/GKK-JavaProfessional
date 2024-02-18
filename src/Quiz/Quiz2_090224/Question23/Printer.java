@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question23;
+package quiz.Quiz2_090224.Question23;
 
 // Option 1
 // public class Printer {

@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question4;
+package quiz.Quiz2_090224.Question4;
 
 import java.util.function.Predicate;
 

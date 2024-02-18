@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question46;
+package quiz.Quiz2_090224.Question46;
 
 class Parent {
     // int i = 10;

@@ -1,4 +1,4 @@
-package Quiz.Quiz1_060224.Question5;
+package quiz.Quiz1_060224.Question5;
 
 // Question 5. Consider below code of Test.java file. What is the result?
 // And the commands:

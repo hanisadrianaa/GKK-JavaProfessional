@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question61;
+package quiz.Quiz2_090224.Question61;
 
 public class Test {
     private static boolean flag = !true;

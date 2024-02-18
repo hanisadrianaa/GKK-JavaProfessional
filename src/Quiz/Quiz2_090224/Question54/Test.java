@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question54;
+package quiz.Quiz2_090224.Question54;
 
 // public class Test {
 //     private static void m1() throws Exception {

@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question60;
+package quiz.Quiz2_090224.Question60;
 
 import java.time.LocalDate;
 

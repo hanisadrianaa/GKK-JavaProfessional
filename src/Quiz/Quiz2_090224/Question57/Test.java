@@ -1,4 +1,4 @@
-package Quiz.Quiz2_090224.Question57;
+package quiz.Quiz2_090224.Question57;
 
 class Vehicle {
     public int getRegistrationNumber() {

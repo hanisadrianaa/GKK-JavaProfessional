@@ -1,4 +1,4 @@
-package Quiz.Quiz1_060224.Question2;
+package quiz.Quiz1_060224.Question2;
 
 public class Test {
     static int i1 = 10;
