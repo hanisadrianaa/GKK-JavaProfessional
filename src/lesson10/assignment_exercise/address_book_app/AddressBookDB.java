@@ -24,6 +24,12 @@ public class AddressBookDB {
         }
     }
 
+    // SELECT
+    // public void searchContacts(String name, String phone, String address) {
+
+    // }
+
+    // INSERT
     public void addContact(String name, String phone, String address) {
         String sql = "INSERT INTO contacts (name, phone, address) VALUES (?, ?, ?)";
 
@@ -48,15 +54,16 @@ public class AddressBookDB {
         }
     }
 
-    public void deleteContact(int id) {
-        String sql = "DELETE FROM contacts WHERE id = ?";
-
+    public void deleteContact(String name, String phone) {
+        String sql = "DELETE FROM contacts WHERE name = ? AND phone = ?";
+    
         try (PreparedStatement prep = conn.prepareStatement(sql)) {
-            prep.setInt(1, id);
+            prep.setString(1, name);
+            prep.setString(2, phone);
             int rowsAffected = prep.executeUpdate();
-
+    
             if (rowsAffected > 0) {
-                System.out.println("Successfully delete contact from database!");
+                System.out.println("Successfully deleted contact from database!");
             } else {
                 System.out.println("Contact not found.");
             }

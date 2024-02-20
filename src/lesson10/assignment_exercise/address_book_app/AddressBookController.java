@@ -77,21 +77,19 @@ public class AddressBookController {
     public void deleteContact() {
         int selectedRow = app.getTable().getSelectedRow();
         if (selectedRow != -1) {
-            // contacts.remove(selectedRow);
-            // model.removeRow(selectedRow);
-            // clearFields();
-
-            int contactId = (int) model.getValueAt(selectedRow, 0); // Assuming id is at column 0
-
-            db.deleteContact(contactId);
-
+            String name = (String) model.getValueAt(selectedRow, 0);
+            String phone = (String) model.getValueAt(selectedRow, 1);
+    
+            db.deleteContact(name, phone);
+    
             model.removeRow(selectedRow);
-
+    
             clearFields();
         } else {
             JOptionPane.showMessageDialog(null, "Please select a contact to delete.");
         }
     }
+    
 
     public void searchContacts() {
         String query = JOptionPane.showInputDialog(null, "Enter search term:");
